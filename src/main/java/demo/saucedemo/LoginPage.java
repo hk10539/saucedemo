@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -15,6 +17,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class LoginPage 
@@ -71,16 +74,17 @@ public class LoginPage
 			WebElement submit=driver.findElement(By.xpath("//input[3]"));
 			submit.click();
 			driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-	        // Assertion based on expected result
-	        if (result) {
-	            // Positive case: Check for successful login, assuming "Products" page is displayed
-	            String str = driver.getCurrentUrl();
-	            Assert.assertEquals(str, loginurl);
-	        } else {
-	            // Negative case: Check for error message
-	            WebElement errorMessage = driver.findElement(By.xpath("//h3[@data-test='error']"));
-	            Assert.assertTrue(errorMessage.isDisplayed(), "Login should fail, but it succeeded.");
-	        }
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));			
+			if (result) {
+				wait.until(ExpectedConditions.urlToBe(loginurl));
+				String currentUrl = driver.getCurrentUrl();
+				Assert.assertEquals(currentUrl, loginurl, "Login should succeed, but it failed.");
+			} else {
+				WebElement errorMessage = wait.until(
+					ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[@data-test='error']"))
+				);
+				Assert.assertTrue(errorMessage.isDisplayed(), "Login should fail, but it succeeded.");
+			}
 		}catch(Exception e) {
 			e.printStackTrace();
 			Assert.fail("An exception occurred: " + e.getMessage());
