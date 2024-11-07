@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-07T09:50:25 IST" name="Suite" finished-at="2024-11-07T09:54:15 IST" duration-ms="229797">
+    <groups>
+    </groups>
+    <test started-at="2024-11-07T09:50:25 IST" name="Test" finished-at="2024-11-07T09:51:05 IST" duration-ms="39723">
+      <class name="demo.saucedemo.LoginPage">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:25 IST" name="beforeClass" finished-at="2024-11-07T09:50:25 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:25 IST" name="beforeMethod" finished-at="2024-11-07T09:50:41 IST" duration-ms="15712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="urlVerify()[pri:1, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:41 IST" name="urlVerify" finished-at="2024-11-07T09:50:43 IST" duration-ms="2140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlVerify -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:43 IST" name="afterMethod" finished-at="2024-11-07T09:50:43 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:43 IST" name="beforeMethod" finished-at="2024-11-07T09:50:44 IST" duration-ms="1410" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:44 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:50:48 IST" duration-ms="3065" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:48 IST" name="afterMethod" finished-at="2024-11-07T09:50:48 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:48 IST" name="beforeMethod" finished-at="2024-11-07T09:50:49 IST" duration-ms="1680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:49 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:50:50 IST" duration-ms="1009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:50 IST" name="afterMethod" finished-at="2024-11-07T09:50:51 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:51 IST" name="beforeMethod" finished-at="2024-11-07T09:50:52 IST" duration-ms="1539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:52 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:50:54 IST" duration-ms="1716" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:54 IST" name="afterMethod" finished-at="2024-11-07T09:50:54 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:54 IST" name="beforeMethod" finished-at="2024-11-07T09:50:55 IST" duration-ms="1270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:55 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:50:56 IST" duration-ms="822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:56 IST" name="afterMethod" finished-at="2024-11-07T09:50:56 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:56 IST" name="beforeMethod" finished-at="2024-11-07T09:50:58 IST" duration-ms="1318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:58 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:50:58 IST" duration-ms="783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:58 IST" name="afterMethod" finished-at="2024-11-07T09:50:59 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:50:59 IST" name="beforeMethod" finished-at="2024-11-07T09:51:00 IST" duration-ms="1562" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:51:00 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:51:02 IST" duration-ms="1470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:51:02 IST" name="afterMethod" finished-at="2024-11-07T09:51:02 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:51:02 IST" name="beforeMethod" finished-at="2024-11-07T09:51:03 IST" duration-ms="1425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:51:03 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:51:04 IST" duration-ms="1118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:51:04 IST" name="afterMethod" finished-at="2024-11-07T09:51:05 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:demo.saucedemo.LoginPage@74e52ef6]" started-at="2024-11-07T09:51:05 IST" name="afterClass" finished-at="2024-11-07T09:51:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- demo.saucedemo.LoginPage -->
+    </test> <!-- Test -->
+    <test started-at="2024-11-07T09:51:05 IST" name="FirefoxTest" finished-at="2024-11-07T09:52:24 IST" duration-ms="79098">
+      <class name="demo.saucedemo.LoginPage">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:05 IST" name="beforeClass" finished-at="2024-11-07T09:51:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:05 IST" name="beforeMethod" finished-at="2024-11-07T09:51:11 IST" duration-ms="6561" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="urlVerify()[pri:1, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:11 IST" name="urlVerify" finished-at="2024-11-07T09:51:16 IST" duration-ms="4359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlVerify -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:16 IST" name="afterMethod" finished-at="2024-11-07T09:51:19 IST" duration-ms="3104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:19 IST" name="beforeMethod" finished-at="2024-11-07T09:51:25 IST" duration-ms="6029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:25 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:51:28 IST" duration-ms="2840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:28 IST" name="afterMethod" finished-at="2024-11-07T09:51:29 IST" duration-ms="1105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:29 IST" name="beforeMethod" finished-at="2024-11-07T09:51:33 IST" duration-ms="4340" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:33 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:51:34 IST" duration-ms="1144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:34 IST" name="afterMethod" finished-at="2024-11-07T09:51:35 IST" duration-ms="1301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:35 IST" name="beforeMethod" finished-at="2024-11-07T09:51:40 IST" duration-ms="4440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:40 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:51:42 IST" duration-ms="1964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:42 IST" name="afterMethod" finished-at="2024-11-07T09:51:45 IST" duration-ms="3273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:45 IST" name="beforeMethod" finished-at="2024-11-07T09:51:49 IST" duration-ms="3524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:49 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:51:53 IST" duration-ms="4123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:53 IST" name="afterMethod" finished-at="2024-11-07T09:51:56 IST" duration-ms="3085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:51:56 IST" name="beforeMethod" finished-at="2024-11-07T09:52:00 IST" duration-ms="3757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:52:00 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:52:05 IST" duration-ms="5556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:52:05 IST" name="afterMethod" finished-at="2024-11-07T09:52:08 IST" duration-ms="3086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:52:08 IST" name="beforeMethod" finished-at="2024-11-07T09:52:14 IST" duration-ms="5645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:52:14 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:52:17 IST" duration-ms="2897" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:52:17 IST" name="afterMethod" finished-at="2024-11-07T09:52:18 IST" duration-ms="1154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:52:18 IST" name="beforeMethod" finished-at="2024-11-07T09:52:22 IST" duration-ms="3665" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:52:22 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:52:23 IST" duration-ms="897" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:52:23 IST" name="afterMethod" finished-at="2024-11-07T09:52:24 IST" duration-ms="1225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:demo.saucedemo.LoginPage@66d18979]" started-at="2024-11-07T09:52:24 IST" name="afterClass" finished-at="2024-11-07T09:52:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- demo.saucedemo.LoginPage -->
+    </test> <!-- FirefoxTest -->
+    <test started-at="2024-11-07T09:52:24 IST" name="EdgeTest" finished-at="2024-11-07T09:54:15 IST" duration-ms="110887">
+      <class name="demo.saucedemo.LoginPage">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:52:24 IST" name="beforeMethod" finished-at="2024-11-07T09:53:50 IST" duration-ms="86220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:52:24 IST" name="beforeClass" finished-at="2024-11-07T09:52:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="urlVerify()[pri:1, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:53:50 IST" name="urlVerify" finished-at="2024-11-07T09:53:51 IST" duration-ms="809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlVerify -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:53:51 IST" name="afterMethod" finished-at="2024-11-07T09:53:52 IST" duration-ms="1299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:53:52 IST" name="beforeMethod" finished-at="2024-11-07T09:53:53 IST" duration-ms="845" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:53:53 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:53:55 IST" duration-ms="1622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:53:55 IST" name="afterMethod" finished-at="2024-11-07T09:53:56 IST" duration-ms="1290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:53:56 IST" name="beforeMethod" finished-at="2024-11-07T09:53:57 IST" duration-ms="1046" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:53:57 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:53:58 IST" duration-ms="1014" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:53:58 IST" name="afterMethod" finished-at="2024-11-07T09:53:59 IST" duration-ms="1287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:53:59 IST" name="beforeMethod" finished-at="2024-11-07T09:54:00 IST" duration-ms="1039" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:00 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:54:01 IST" duration-ms="742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:01 IST" name="afterMethod" finished-at="2024-11-07T09:54:02 IST" duration-ms="1281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:02 IST" name="beforeMethod" finished-at="2024-11-07T09:54:03 IST" duration-ms="936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:03 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:54:04 IST" duration-ms="711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:04 IST" name="afterMethod" finished-at="2024-11-07T09:54:05 IST" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:05 IST" name="beforeMethod" finished-at="2024-11-07T09:54:06 IST" duration-ms="976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:06 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:54:08 IST" duration-ms="1648" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:08 IST" name="afterMethod" finished-at="2024-11-07T09:54:09 IST" duration-ms="1253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:09 IST" name="beforeMethod" finished-at="2024-11-07T09:54:10 IST" duration-ms="890" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:10 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:54:11 IST" duration-ms="650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:11 IST" name="afterMethod" finished-at="2024-11-07T09:54:12 IST" duration-ms="1299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:12 IST" name="beforeMethod" finished-at="2024-11-07T09:54:13 IST" duration-ms="846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,boolean)[pri:2, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:13 IST" name="loginTest" data-provider="loginTestData" finished-at="2024-11-07T09:54:13 IST" duration-ms="663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:13 IST" name="afterMethod" finished-at="2024-11-07T09:54:15 IST" duration-ms="1269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:demo.saucedemo.LoginPage@609cd4d8]" started-at="2024-11-07T09:54:15 IST" name="afterClass" finished-at="2024-11-07T09:54:15 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- demo.saucedemo.LoginPage -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

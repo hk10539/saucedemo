@@ -1,0 +1,114 @@
+package demo.saucedemo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+public class LoginPage 
+{
+	WebDriver driver;
+	final static String url = "https://www.saucedemo.com/v1/";
+	final static String loginurl="https://www.saucedemo.com/v1/inventory.html";
+	@DataProvider(name="loginTestData")
+	public Object[][] loginTestData(){
+		return new Object[][] {
+			//POSITIVE TESTCASE
+			{"standard_user", "secret_sauce", true},
+			//NEGATIVE TESTCASE
+			{"standard_user", "abcd", false},
+			{"", "", false},
+			{"abcd", "secret_sauce", false},
+			{"", "secret_sauce", false},
+			{"standard_user", "", false},
+			{"standard", "abcd", false}
+		};
+	}
+	@BeforeClass
+	public void beforeClass() {
+	}
+    @Parameters("browser") 
+	@BeforeMethod
+	public void beforeMethod(String browser) {
+        // Open Browser based on parameter
+        if(browser.equalsIgnoreCase("chrome")) {
+    		ChromeOptions co=new ChromeOptions();
+    		co.addArguments("--remote-allow-origins=*");
+    		driver=new ChromeDriver(co);
+        } else if(browser.equalsIgnoreCase("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+            driver = new FirefoxDriver();
+        } else if(browser.equalsIgnoreCase("edge")) {
+            WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver();
+        }
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+	}
+	@Test(priority=1)
+    public void urlVerify() throws IOException
+    {
+		driver.get(url);
+        HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+        connection.setRequestMethod("GET");
+        connection.connect();       
+        int responseCode = connection.getResponseCode();
+        Assert.assertEquals(responseCode, 200, "Status code is not 200");
+    }
+	@Test(dataProvider="loginTestData",priority=2)
+	public void loginTest(String username, String password, boolean result) {
+		try {
+			driver.get(url);
+			driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+			WebElement userName=driver.findElement(By.xpath("//input[1]"));
+			userName.clear();
+			userName.sendKeys(username);
+			WebElement passWord=driver.findElement(By.xpath("//input[2]"));
+			passWord.clear();
+			passWord.sendKeys(password);
+			WebElement submit=driver.findElement(By.xpath("//input[3]"));
+			submit.click();
+			driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));			
+			if (result) {
+				wait.until(ExpectedConditions.urlToBe(loginurl));
+				String currentUrl = driver.getCurrentUrl();
+				Assert.assertEquals(currentUrl, loginurl, "Login should succeed, but it failed.");
+			} else {
+				WebElement errorMessage = wait.until(
+					ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[@data-test='error']"))
+				);
+				Assert.assertTrue(errorMessage.isDisplayed(), "Login should fail, but it succeeded.");
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+			Assert.fail("An exception occurred: " + e.getMessage());
+		}
+	}
+	@AfterMethod
+	public void afterMethod() {
+		driver.quit();
+	}
+	@AfterClass
+	public void afterClass() {
+	}
+}
